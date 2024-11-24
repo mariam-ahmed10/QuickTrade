@@ -911,5 +911,46 @@ display: block;
    
 
 }
+/* تحسين مرونة التصنيفات */
+.categories div {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* تحسين الصور في الشاشات الصغيرة */
+.product img, .offer img {
+    width: 100%;
+    height: auto;
+}
+
+/* تحسين الأزرار لتشغل كامل العرض في الشاشات الصغيرة */
+#offers-btn, #products-btn, #send, .clear-cart, .checkout {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* تقليل حجم النصوص في الشاشات الصغيرة */
+.customer-rating p {
+    font-size: 12px;
+}
+
+/* تحسين المسافات بين العناصر */
+.buttons {
+    gap: 1.25em;
+}
+
+/* تحسين عرض الجداول */
+#protable {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* تحسين الاستجابة للأزرار */
+.offer-buttons button {
+    padding: 0.5em 1em;
+    font-size: 0.875em;
+}
+
 
 
