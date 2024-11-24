@@ -62,6 +62,14 @@
     .review img {
         width: 50px; /* تصغير حجم الصور للمراجعات */
     }
+	header div {
+    font-size: 0.9375em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* استخدم space-between بدلاً من space-around لزيادة المسافة المتساوية بين العناصر */
+    gap: 1.875em; /* يمكنك تقليل المسافة بين العناصر هنا */
+}
+
 }
 
 
