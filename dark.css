@@ -961,4 +961,45 @@ hr {
 	color:white;
 }
 
+.categories div {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+.product img, .offer img {
+    width: 100%;
+    height: auto;
+}
+
+
+#offers-btn, #products-btn, #send, .clear-cart, .checkout {
+    width: 100%;
+    max-width: 300px;
+}
+
+
+.customer-rating p {
+    font-size: 12px;
+}
+
+
+.buttons {
+    gap: 1.25em;
+}
+
+
+#protable {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.offer-buttons button {
+    padding: 0.5em 1em;
+    font-size: 0.875em;
+}
+
+
 
