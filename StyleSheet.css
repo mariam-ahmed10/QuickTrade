@@ -1,11 +1,71 @@
+
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    /* الشريط الجانبي (sidebar) */
+    #sidebar {
+        display: block; /* تحويل الشريط الجانبي إلى قائمة عمودية */
+        width: 100%; /* تأكد من أن الشريط الجانبي يغطي عرض الشاشة */
     }
-    header h1 {
-        font-size: 1.5em;
+
+    #sidebar a {
+        display: block; /* جعل الروابط تظهر بشكل عمودي */
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* تعديل شعار الموقع */
+    #logo {
+        width: 100px; /* تقليص حجم الشعار في الشاشات الصغيرة */
+    }
+
+    /* تعديل خط العنوان في الصفحة الرئيسية */
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* تعديل عرض العروض (offers) */
+    .offers, .products {
+        display: block; /* تغيير العرض ليظهر بشكل عمودي */
+        width: 100%;
+    }
+
+    .offer, .product {
+        width: 100%; /* تأكد من أن العروض والمنتجات تأخذ العرض الكامل */
+        margin-bottom: 15px;
+    }
+
+    /* تخصيص الأزرار */
+    #offers-btn, #products-btn {
+        width: 100%; /* جعل الأزرار تأخذ عرض كامل */
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* تخصيص مربعات التصنيف */
+    .categories div {
+        width: 100%; /* عرض كامل لكل تصنيف */
+        text-align: center;
+    }
+
+    /* تخصيص footer */
+    footer {
+        text-align: center;
+    }
+
+    /* تصغير الخطوط والعناصر في المراجعات */
+    .customer-rating p {
+        font-size: 14px;
+    }
+
+    /* تخصيص عنوان المراجعات */
+    .review img {
+        width: 50px; /* تصغير حجم الصور للمراجعات */
     }
 }
+
+
+
 
 @media (max-width: 480px) {
     .categories div {
