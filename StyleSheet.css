@@ -72,15 +72,6 @@
         width: 100%; /* Full width for small screens */
     }
 }
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Hide navigation */
-    }
-    nav.active ul {
-        display: flex; /* Show on toggle */
-        flex-direction: column;
-    }
-}
 
 
 
