@@ -67,12 +67,7 @@ header div a img {
     }
 
     
-    .container {
-	
-        padding: .5em;
-        flex-direction: column;
-        align-items: center;
-    }
+    
 
    
     .offers, .products {
@@ -87,9 +82,14 @@ header div a img {
         text-align: center;
         margin-bottom: 1.5em;
     }
+	 .offer h3, .offer p, .product p ,.product h3{
+		 padding:0.25em;
+
+		 
+	 }
 
     .offer img, .product img {
-        width: 80%;
+        width: 50%;
         height: auto;
     }
 
