@@ -66,7 +66,14 @@ header div a img {
         margin: 10px auto;
     }
 
-    
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25em; 
+    gap: 1.25em; 
+}
     
 
    
@@ -98,12 +105,18 @@ header div a img {
         margin: 10px 0;
         font-size: 14px;
     }
+	#cont{
+    display: flex;
+    flex-direction: column;
+		justify-content: center;
+
+}
     
 
    
 
    .categories div {
-        width: 40%; /* تصغير العرض */
+        width: 100%; /* تصغير العرض */
         margin-bottom: 1em;
         text-align: center;
     }
