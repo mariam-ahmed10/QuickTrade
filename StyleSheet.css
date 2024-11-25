@@ -11,7 +11,7 @@
 	
 	
     header {
-        padding: 0.5em; 
+        padding: 1em;
         
     }
 
@@ -22,6 +22,7 @@
 
     header div {
         font-size: 0.9em; 
+	display: flex;
         flex-direction: row; 
         align-items: center; 
         gap: 1em; 
