@@ -45,15 +45,15 @@ header div a img {
         margin: 10px auto;
     }
 
-    /* تحسين الـ container */
+    
     .container {
 	
-        padding: 1em;
+        padding: .5em;
         flex-direction: column;
         align-items: center;
     }
 
-    /* تحسين التنسيق في المنتجات والعروض */
+   
     .offers, .products {
         display: flex;
         flex-direction: column;
@@ -85,15 +85,22 @@ header div a img {
         margin-bottom: 1.25em;
     }
 
-    .categories img {
-        width: 80%;
-        height: 10.5em;
-        object-fit: cover;
+   .categories div {
+        width: 40%; /* تصغير العرض */
+        margin-bottom: 1em;
+        text-align: center;
     }
 
-    .customer-rating {
-        flex-direction: column;
-        text-align: center;
+    .categories img {
+        width: 100%; /* تأكد من أن الصورة لا تتجاوز الحاوية */
+        height: 10em; /* تقليل ارتفاع الصورة */
+        object-fit: cover; /* لضمان تناسب الصورة مع الحاوية */
+        border-radius: 10px; /* إضافة زوايا مستديرة للمسة جمالية */
+    }
+
+    .categories h3 {
+        font-size: 14px; /* تقليل حجم النص */
+        margin-top: 0.5em;
     }
 
     .review img {
