@@ -23,6 +23,11 @@
     width: 100%;
     max-width: 300px;
 }
+.container {
+        width: 90%; /* تقليل عرض الـ container ليكون أصغر */
+        margin: 0 auto; /* توسيط الـ container */
+        padding: 1em; /* إضافة مسافة داخلية لجعل المحتوى أكثر راحة */
+    }
 
 /* تقليل حجم النصوص في الشاشات الصغيرة */
 .customer-rating p {
