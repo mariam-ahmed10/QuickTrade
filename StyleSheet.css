@@ -930,9 +930,9 @@ display: block;
     margin-right: 0.5em; /* Adds some spacing between the buttons */
 }
 
-        .offer-buttons button {
+        .offer-button button {
             padding: 0.5em 0.75em;
-            background-color: #007bff;
+            background-color: #5b1100;
             color: white;
             border: none;
             border-radius: 0.2em;
@@ -1065,7 +1065,7 @@ display: block;
 
         .buttons .add-offer {
             padding: 0.5em 1em;
-            background-color: #007bff;
+            background-color: #5b1100;
             color: white;
             border: none;
             border-radius: 0.2em;
