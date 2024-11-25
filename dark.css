@@ -1,122 +1,304 @@
 @media (max-width: 768px) {
-    /* الشريط الجانبي (sidebar) */
-    #sidebar {
-        display: block; /* تحويل الشريط الجانبي إلى قائمة عمودية */
-        width: 100%; /* تأكد من أن الشريط الجانبي يغطي عرض الشاشة */
-    }
-	/* تحسين مرونة التصنيفات */
-.categories div {
-    flex: 1;
-    max-width: 100%;
-    text-align: center;
-}
-
-/* تحسين الصور في الشاشات الصغيرة */
-.product img, .offer img {
-    width: 100%;
-    height: auto;
-}
-
-/* تحسين الأزرار لتشغل كامل العرض في الشاشات الصغيرة */
-#offers-btn, #products-btn, #send, .clear-cart, .checkout {
-    width: 100%;
-    max-width: 300px;
-}
-
-/* تقليل حجم النصوص في الشاشات الصغيرة */
-.customer-rating p {
-    font-size: 12px;
-}
-
-/* تحسين المسافات بين العناصر */
-.buttons {
-    gap: 1.25em;
-}
-
-/* تحسين عرض الجداول */
-#protable {
-    width: 100%;
-    max-width: 600px;
-}
-
-/* تحسين الاستجابة للأزرار */
-.offer-buttons button {
-    padding: 0.5em 1em;
-    font-size: 0.875em;
-}
-
-    #sidebar a {
-        display: block; /* جعل الروابط تظهر بشكل عمودي */
-        padding: 10px;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    /* تعديل شعار الموقع */
-    #logo {
-        width: 100px; /* تقليص حجم الشعار في الشاشات الصغيرة */
-    }
-
-    /* تعديل خط العنوان في الصفحة الرئيسية */
-    h1 {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    /* تعديل عرض العروض (offers) */
-    .offers, .products {
-        display: block; /* تغيير العرض ليظهر بشكل عمودي */
-        width: 100%;
-    }
-
-    .offer, .product {
-        width: 100%; /* تأكد من أن العروض والمنتجات تأخذ العرض الكامل */
-        margin-bottom: 15px;
-    }
-
-    /* تخصيص الأزرار */
-    #offers-btn, #products-btn {
-        width: 100%; /* جعل الأزرار تأخذ عرض كامل */
-        padding: 10px;
-        text-align: center;
-    }
-
-    /* تخصيص مربعات التصنيف */
-    .categories div {
-        width: 100%; /* عرض كامل لكل تصنيف */
-        text-align: center;
-    }
-
-    /* تخصيص footer */
-    footer {
-        text-align: center;
-    }
-
-    /* تصغير الخطوط والعناصر في المراجعات */
-    .customer-rating p {
+    /* تعديل الخطوط الأساسية */
+    body {
         font-size: 14px;
     }
 
-    /* تخصيص عنوان المراجعات */
-    .review img {
-        width: 50px; /* تصغير حجم الصور للمراجعات */
+    header {
+        padding: 0.625em 0;
     }
-	header div {
-    font-size: 0.9375em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* استخدم space-between بدلاً من space-around لزيادة المسافة المتساوية بين العناصر */
-    gap: 0.875em; /* يمكنك تقليل المسافة بين العناصر هنا */
+
+    header h1 {
+        font-size: 1.125em;
+        margin-right: 0;
+    }
+
+    /* الشريط الجانبي */
+    #sidebar {
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+    /* تنسيق الروابط في الهيدر */
+    header div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div a {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        margin: 10px auto;
+    }
+
+    /* تحسين الـ container */
+    .container {
+        padding: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* تحسين التنسيق في المنتجات والعروض */
+    .offers, .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .offer, .product {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .offer img, .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    .offer-buttons button, .clear-cart, .checkout {
+        width: 90%;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    .categories div {
+        width: 100%;
+        padding: 1em 0;
+        margin-bottom: 1.25em;
+    }
+
+    .categories img {
+        width: 100%;
+        height: 12.5em;
+        object-fit: cover;
+    }
+
+    .customer-rating {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .review img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .review {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1em;
+        font-size: 14px;
+    }
 }
 
-}
 
 
 @media (max-width: 480px) {
+    /* تغيير حجم الخطوط بشكل أكبر للمحتوى في الشاشات الصغيرة */
+    body {
+        font-size: 12px;
+    }
+
+    /* تحسين العناوين في الهيدر */
+    header h1 {
+        font-size: 1em;
+        margin-right: 0;
+    }
+
+    /* تنظيم الهيدر بشكل عمودي */
+    header div {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    /* تحسين الأزرار */
+    .offer-buttons button, .clear-cart, .checkout {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    /* تخصيص عرض العناصر داخل .products و .offers */
+    .offer, .product {
+        width: 100%;
+    }
+
+    .offer img, .product img {
+        width: 100%;
+        height: auto;
+    }
+
     .categories div {
-        width: 100%; /* Full width for small screens */
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    .categories img {
+        width: 100%;
+        height: 10em;
+        object-fit: cover;
+    }
+
+    .review img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 1em;
     }
 }
+@media (max-width: 768px) {
+    form {
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #761d1a;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #5b1100;
+    }
+}
+@media (max-width: 768px) {
+    /* إبقاء الشريط الجانبي أفقيًا */
+    #sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em;
+        box-sizing: border-box;
+    }
+
+    /* تخصيص الروابط في الشريط الجانبي */
+    #sidebar a {
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+        background-color: #761d1a;
+        color: #fff;
+        margin-right: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    #sidebar a:hover {
+        background-color: #f5f5f3;
+        color: #761d1a;
+    }
+
+    /* تحسين عرض الهيدر */
+    header div {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    }
+
+    /* ضبط صورة الشعار */
+    #logo {
+        width: 80px;
+        height: 80px;
+        margin: 10px auto;
+    }
+
+    /* تخصيص التصميم داخل .products و .offers */
+    .offers, .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: space-around;
+    }
+
+    .offer, .product {
+        width: 45%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+
+    .offer img, .product img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* تخصيص الأزرار */
+    .offer-buttons button, .clear-cart, .checkout {
+        width: 100%;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+
+    /* تحسين الـ categories */
+    .categories div {
+        width: 45%;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .categories img {
+        width: 100%;
+        height: 12.5em;
+        object-fit: cover;
+    }
+
+    /* تخصيص التعليقات */
+    .customer-rating {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .review img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1em;
+        font-size: 14px;
+    }
+}
+
 
 
 
