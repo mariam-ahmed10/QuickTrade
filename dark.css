@@ -111,6 +111,13 @@ header div a img {
 		justify-content: center;
 
 }
+	.categories {
+    display: flex;
+     flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.25em; 
+    margin-bottom: 2.5em; 
+}
     
 
    
