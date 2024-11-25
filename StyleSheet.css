@@ -17,8 +17,8 @@
 	#sidebar {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-	 align-items:flex-start; ;
+        justify-content: flex-start;
+
         width: 100%;
         margin-top: .5em;
         padding: 0.2em;
@@ -31,7 +31,7 @@
         font-size: 14px;
         text-align: center;
         
-        margin-right: 20px;
+        margin-left: 20px;
     
         text-decoration: none;
     }
