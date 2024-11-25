@@ -58,7 +58,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1em;
+       
     }
 
     .offer, .product {
@@ -67,7 +67,7 @@
         margin-bottom: 1.5em;
     }
 	 .offer h3, .offer p, .product p ,.product h3{
-		 padding:0.25em;
+		 
 
 		 
 	 }
