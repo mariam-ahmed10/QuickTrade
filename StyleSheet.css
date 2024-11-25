@@ -8,7 +8,7 @@
 
   
 	header h1 {
-    font-size: xx-small;
+    font-size: 1.125em;
 	margin-right: 0;
    
 }
@@ -21,7 +21,7 @@
     
 
     header div {
-    font-size: 0.9375em;
+    font-size: 0.375em;
     display: flex;
     flex-direction: row;
      flex-wrap: wrap;
