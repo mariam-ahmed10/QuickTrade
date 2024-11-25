@@ -52,27 +52,13 @@
     gap: 1.25em;
 }
 
-    
-    
-
-   
-    .offers, .products {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-    }
 
     .offer, .product {
         width: 80%;
         text-align: center;
         margin-bottom: 1.5em;
     }
-	 .offer h3, .offer p, .product p ,.product h3{
-		 
-
-		 
-	 }
+	 
 
     .offer img, .product img {
         width: 50%;
@@ -144,115 +130,127 @@
 @media (max-width: 480px) {
   
     body {
-        font-size: 12px;
-    }
-
-    header h1 {
-        font-size: 1em;
-        margin-right: 0;
-    }
-	
-
-    header div {
-        flex-direction: column;
-        align-items: center;
-        gap: 1em;
+        font-size: 14px;
     }
 
    
-    .offer-buttons button, .clear-cart, .checkout {
-        width: 100%;
-        padding: 10px 0;
+
+  
+	header h1 {
+    font-size: xx-small;
+}
+	
+    header {
+        padding: 3em;
+        
+    }
+
+    
+
+    header div {
+    font-size: 0.9375em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .75em;
+}
+
+    header div a img {
+        width: 2em; 
+        height: 2em; 
+    }
+
+  
+
+    .breadcrumb {
         font-size: 12px;
     }
 
-   .products و .offers */
-    .offer, .product {
-        width: 100%;
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        margin: 10px auto;
     }
+	.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.25em;
+    gap: 1.25em;
+}
+
+
+    .offer, .product {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+	 
 
     .offer img, .product img {
-        width: 100%;
+        width: 50%;
         height: auto;
     }
+
+    .offer-buttons button, .clear-cart, .checkout {
+        width: 90%;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+	#cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
 	.categories {
-	width: 100%;
     display: flex;
      flex-direction: column;
-   justify-content: center; 
-    align-items: center;
+    justify-content: center;
     gap: 1.25em; 
     margin-bottom: 2.5em; 
 }
+    
 
-    .categories div {
-	width: 100%;
-        padding: 0.5em;
+   
+
+   .categories div {
+        width: 100%; /* تصغير العرض */
+        margin-bottom: 1em;
         text-align: center;
     }
 
     .categories img {
-        width: 100%;
-        height: 10em;
-        object-fit: cover;
+        width: 100%; 
+        height: 10em; 
+        object-fit: cover; 
+        border-radius: 10px;
     }
 
-    .review img {
-        width: 50px;
-        height: 50px;
+    .categories h3 {
+        font-size: 14px; 
+        margin-top: 0.5em;
     }
-    .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.25em; 
-    gap: 1.25em; 
-}
-	.container {
-    display: none;
+
+    .customer-rating p {
+        font-size: 14px;
+    }
+
     
-}
+    .review img {
+        width: 50px; /* تصغير حجم الصور للمراجعات */
+    }
 
     footer {
-        font-size: 12px;
+        text-align: center;
         padding: 1em;
-    }
-}
-@media (max-width: 768px) {
-    form {
-        width: 100%;
-        padding: 1em;
-        box-sizing: border-box;
-    }
-
-    input[type="text"], input[type="email"], input[type="password"], textarea {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 10px;
-        font-size: 14px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    button[type="submit"] {
-        width: 100%;
-        padding: 12px;
-        background-color: #761d1a;
-        color: white;
-        border: none;
-        border-radius: 5px;
         font-size: 14px;
     }
+	
+}
 
-    button[type="submit"]:hover {
-        background-color: #5b1100;
-    }
-	.container {
-    display: none;
-    
-}
-}
 
 
 
