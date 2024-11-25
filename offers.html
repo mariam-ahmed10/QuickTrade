@@ -13,7 +13,7 @@
 			<header>
 				<div id="sidebar"><img id="logo" src="images/logo.png" alt="quicktrada" width="150"><h1>QUICKTRADA</h1>
 				<a href="cart.html"><img src="images/cart.png" alt="cart icon">cart</a>
-				<a href="saller.html"><img src="images/seller.png" alt="seller icon">seller</a>
+				<a href="Saller.html"><img src="images/seller.png" alt="seller icon">seller</a>
 				<a href="customer.html"><img src="images/customer.png" alt="customer icon">customer</a>
 				<a href="Clothing.html"><img src="images/clothes.png" alt="clothes icon">clothes</a>
 				<a href="Shoes.html"><img src="images/choose.png" alt="choes icon">Shoes</a>
@@ -25,7 +25,7 @@
 			
 			<!-- Breadcrumbs -->
 			<div class="breadcrumbs">
-           <span>&gt;</span> <a href="home.html">Home</a><span>&gt;</span> <a href="saller.html">Seller</a><span>&gt;</span> <a href="offers.html">Offers</a>
+           <span>&gt;</span> <a href="index.html">Home</a><span>&gt;</span> <a href="Saller.html">Seller</a><span>&gt;</span> <a href="offers.html">Offers</a>
         </div>
 			
 			<!-- Offers section -->
@@ -123,5 +123,12 @@
 			<p>&copy; 2024 QuickTrade. All Rights Reserved.</p>
 		
 		</footer>
+			<script>
+window.onload = function () {
+    const savedTheme = localStorage.getItem('theme') || 'StyleSheet.css';
+    document.querySelector('link[rel="stylesheet"]').setAttribute('href', savedTheme);
+};
+
+</script>
 		</body>
 	</html>
