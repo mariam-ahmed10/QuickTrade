@@ -1,122 +1,163 @@
 
 @media (max-width: 768px) {
-    /* الشريط الجانبي (sidebar) */
-    #sidebar {
-        display: block; /* تحويل الشريط الجانبي إلى قائمة عمودية */
-        width: 100%; /* تأكد من أن الشريط الجانبي يغطي عرض الشاشة */
-    }
-	/* تحسين مرونة التصنيفات */
-.categories div {
-        width: 100%; /* تأكد من أن التصنيف يأخذ عرض الشاشة بالكامل */
-        height: auto; /* تعديل الارتفاع ليكون تلقائي حسب المحتوى */
-        padding-top: 1.25em; /* إضافة padding أعلى لتوسيع المساحة */
+    /* تعديل الخطوط الأساسية */
+    body {
+        font-size: 14px;
     }
 
-/* تحسين الصور في الشاشات الصغيرة */
-.product img, .offer img {
-    width: 100%;
-    height: auto;
-}
-
-/* تحسين الأزرار لتشغل كامل العرض في الشاشات الصغيرة */
-#offers-btn, #products-btn, #send, .clear-cart, .checkout {
-    width: 100%;
-    max-width: 300px;
-}
-.container {
-        width: 90%; /* تقليل عرض الـ container ليكون أصغر */
-        margin: 0 auto; /* توسيط الـ container */
-        padding: 1em; /* إضافة مسافة داخلية لجعل المحتوى أكثر راحة */
+    header {
+   
+        padding: 0.625em 0;
     }
 
-/* تقليل حجم النصوص في الشاشات الصغيرة */
-.customer-rating p {
-    font-size: 12px;
-}
-
-/* تحسين المسافات بين العناصر */
-.buttons {
-    gap: 1.25em;
-}
-
-/* تحسين عرض الجداول */
-#protable {
-    width: 100%;
-    max-width: 600px;
-}
-
-/* تحسين الاستجابة للأزرار */
-.offer-buttons button {
-    padding: 0.5em 1em;
-    font-size: 0.875em;
-}
-
-    #sidebar a {
-        display: block; /* جعل الروابط تظهر بشكل عمودي */
-        padding: 10px;
-        text-align: center;
-        font-size: 16px;
-	gap: 0.575em;
-	
+    header h1 {
+        font-size: 1.125em;
+        
     }
-
-    /* تعديل شعار الموقع */
-    #logo {
-        width: 100px; /* تقليص حجم الشعار في الشاشات الصغيرة */
-    }
-
-    /* تعديل خط العنوان في الصفحة الرئيسية */
-    h1 {
-        font-size: 24px;
-        text-align: center;
-    }
-
-    /* تعديل عرض العروض (offers) */
-    .offers, .products {
-        display: block; /* تغيير العرض ليظهر بشكل عمودي */
+	#sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         width: 100%;
+        margin-top: .5em;
+        padding: 0.2em;
+       
+    }
+
+   
+    #sidebar a {
+        padding: 3px;
+        font-size: 14px;
+        text-align: center;
+        
+        margin-right: 5px;
+    
+        text-decoration: none;
+    }
+
+  
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+   header h1 {
+    font-size: 0.9375em;
+    margin-right: 33.75em;
+}
+
+header div {
+    font-size: 0.375em;
+   
+    gap: 1px;
+}
+
+header div a img {
+	 max-width: 80%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    width: 60px; 
+    height: 60px; 
+}
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        margin: 10px auto;
+    }
+
+    .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25em; 
+    gap: 1.25em; 
+}
+    
+
+   
+    .offers, .products {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
     }
 
     .offer, .product {
-        width: 100%; /* تأكد من أن العروض والمنتجات تأخذ العرض الكامل */
-        margin-bottom: 15px;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 1.5em;
+    }
+	 .offer h3, .offer p, .product p ,.product h3{
+		 padding:0.25em;
+
+		 
+	 }
+
+    .offer img, .product img {
+        width: 50%;
+        height: auto;
     }
 
-    /* تخصيص الأزرار */
-    #offers-btn, #products-btn {
-        width: 100%; /* جعل الأزرار تأخذ عرض كامل */
-        padding: 10px;
+    .offer-buttons button, .clear-cart, .checkout {
+        width: 90%;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+	#cont{
+    display: flex;
+    flex-direction: column;
+		justify-content: center;
+
+}
+	.categories {
+    display: flex;
+     flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.25em; 
+    margin-bottom: 2.5em; 
+}
+    
+
+   
+
+   .categories div {
+        width: 100%; /* تصغير العرض */
+        margin-bottom: 1em;
         text-align: center;
     }
 
-    /* تخصيص مربعات التصنيف */
-    .categories div {
-        width: 100%; /* عرض كامل لكل تصنيف */
-        text-align: center;
+    .categories img {
+        width: 100%; /* تأكد من أن الصورة لا تتجاوز الحاوية */
+        height: 10em; /* تقليل ارتفاع الصورة */
+        object-fit: cover; /* لضمان تناسب الصورة مع الحاوية */
+        border-radius: 10px; /* إضافة زوايا مستديرة للمسة جمالية */
     }
 
-    /* تخصيص footer */
-    footer {
-        text-align: center;
+    .categories h3 {
+        font-size: 14px; /* تقليل حجم النص */
+        margin-top: 0.5em;
     }
 
-    /* تصغير الخطوط والعناصر في المراجعات */
     .customer-rating p {
         font-size: 14px;
     }
 
-    /* تخصيص عنوان المراجعات */
+    
     .review img {
         width: 50px; /* تصغير حجم الصور للمراجعات */
     }
-	header div {
-    font-size: 0.9375em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* استخدم space-between بدلاً من space-around لزيادة المسافة المتساوية بين العناصر */
-    gap: 0.875em; /* يمكنك تقليل المسافة بين العناصر هنا */
-}
 
+    footer {
+        text-align: center;
+        padding: 1em;
+        font-size: 14px;
+    }
+	
+
+   
 }
 
 
