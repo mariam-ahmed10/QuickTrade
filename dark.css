@@ -13,27 +13,31 @@
         margin-right: 0;
     }
 
-    /* الشريط الجانبي */
-    #sidebar {
-        display: block;
-        width: 100%;
-        margin-top: 1em;
-    }
+  
 
     .breadcrumb {
         font-size: 12px;
     }
 
-    /* تنسيق الروابط في الهيدر */
-    header div {
-        flex-direction: column;
-        align-items: center;
-    }
+   header h1 {
+    font-size: 0.9375em;
+    margin-right: 33.75em;
+}
 
-    header div a {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
+header div {
+    font-size: 0.375em;
+   
+    gap: 0.875em;
+}
+
+header div a img {
+	 max-width: 80%;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+    width: 60px; 
+    height: 60px; 
+}
 
     #logo {
         width: 80px;
@@ -43,6 +47,7 @@
 
     /* تحسين الـ container */
     .container {
+	
         padding: 1em;
         flex-direction: column;
         align-items: center;
@@ -57,13 +62,13 @@
     }
 
     .offer, .product {
-        width: 100%;
+        width: 80%;
         text-align: center;
         margin-bottom: 1.5em;
     }
 
     .offer img, .product img {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
 
@@ -72,16 +77,17 @@
         margin: 10px 0;
         font-size: 14px;
     }
+    
 
     .categories div {
-        width: 100%;
+        width: 80%;
         padding: 1em 0;
         margin-bottom: 1.25em;
     }
 
     .categories img {
-        width: 100%;
-        height: 12.5em;
+        width: 80%;
+        height: 10.5em;
         object-fit: cover;
     }
 
