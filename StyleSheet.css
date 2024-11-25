@@ -5,35 +5,31 @@
         font-size: 14px;
     }
 
-    header {
    
-        padding: 0.625em 0;
+
+  
+	
+	
+    header {
+        padding: 0.5em; 
+        
     }
 
     header h1 {
-        font-size: 1.125em;
-        
-    }
-	
-	#sidebar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: .5em;
-        padding: 0.2em;
-       
+        font-size: 0.9375em; 
+        margin-right: 0; 
     }
 
-   
-    #sidebar a {
-        padding: .5px;
-        font-size: 14px;
-        text-align: center;
-         width: 100%; 
-         margin-right: 0.25em;
-    
-        text-decoration: none;
+    header div {
+        font-size: 0.9em; 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 1em; 
+    }
+
+    header div a img {
+        width: 2em; 
+        height: 2em; 
     }
 
   
@@ -42,24 +38,6 @@
         font-size: 12px;
     }
 
-   header h1 {
-    font-size: 0.9375em;
-    margin-right: -2px;
-}
-
-header div {
-    font-size: 0.375em;
-  
-}
-
-header div a img {
-	 max-width: 80%;
-    height: auto;
-    display: block; 
-    margin: 0 auto; 
-    width: 60px; 
-    height: 60px; 
-}
 
     #logo {
         width: 80px;
