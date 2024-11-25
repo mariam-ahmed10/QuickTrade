@@ -27,7 +27,7 @@
 
    
     #sidebar a {
-        padding: 3px;
+        padding: 1px;
         font-size: 14px;
         text-align: center;
         
@@ -49,8 +49,7 @@
 
 header div {
     font-size: 0.375em;
-   
-    gap: 1px;
+  
 }
 
 header div a img {
