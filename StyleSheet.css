@@ -27,12 +27,12 @@
      flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    gap: .25em;
+    gap: 0em;
 }
 
     header div a img {
-        width: 2em; 
-        height: 2em; 
+        width: 1em; 
+        height: 1em; 
     }
 
   
