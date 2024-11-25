@@ -14,10 +14,11 @@
         font-size: 1.125em;
         
     }
+	
 	#sidebar {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
 	align-items: flex-start;
 
         width: 100%;
@@ -68,6 +69,14 @@ header div a img {
         height: 80px;
         margin: 10px auto;
     }
+	.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25em; 
+    gap: 1.25em; 
+}
 
     
     
@@ -104,7 +113,7 @@ header div a img {
 	#cont{
     display: flex;
     flex-direction: column;
-		justify-content: center;
+    justify-content: center;
 
 }
 	.categories {
