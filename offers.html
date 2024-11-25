@@ -5,6 +5,7 @@
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>Offers</title>
 			<link rel="stylesheet" href="StyleSheet.css">
+			<script src="offersJS.js"></script>
 		</head>
 		
 		<body>
@@ -24,7 +25,7 @@
 			
 			<!-- Breadcrumbs -->
 			<div class="breadcrumbs">
-           <span>&gt;</span> <a href="index.html">Home</a><span>&gt;</span> <a href="saller.html">Seller</a><span>&gt;</span> <a href="offers.html">Offers</a>
+           <span>&gt;</span> <a href="home.html">Home</a><span>&gt;</span> <a href="saller.html">Seller</a><span>&gt;</span> <a href="offers.html">Offers</a>
         </div>
 			
 			<!-- Offers section -->
@@ -33,14 +34,14 @@
 			
 			
 				<fieldset class="offerList">
-				<!-- Top buttons (separate from offers list) -->
-				<div class="offer-buttons">
-					<button>Select</button>
+				
+					<!-- Top button (separate from offers list) -->
+				<div class="offer-button">
 					<button id="delete">Delete</button>
 				</div>
 
 				<!-- Offers List -->
-				<div class="offers-list">
+				<div class="offers-list" id="list">
 				
 					<!-- Offers item -->
 					<div class="offer-item">
@@ -65,7 +66,7 @@
 						<img src="images/offer4.jpg" alt="Offer image">
 						<label class="title">Designer Bags & Wallets Exchange</label>
 						<label><br>Access your dream designer bags and wallets by trading or buying from trusted sellers. Find stylish, gently-used pieces that fit your budget and support sustainable fashion.</label>
-						<input type="checkbox">
+						<input type="checkbox" >
 					</div>
 				</div>
 				</fieldset>
@@ -78,24 +79,24 @@
 			
 				<div class="addOfferContainer">
 					<div class="image-upload">
-						<label for="file-upload"><br>Add image</label>
-						<input type="file" id="file-upload">
+						<label for="photo-upload"><br>Add image</label>
+						<input type="file" id="photo-upload" required>
 					</div>
 
 				<div class="details">
 				<div class="form-group">
 					<label for="title">Offer title:</label>
-					<input type="text" id="title" placeholder="Enter title">
+					<input type="text" id="title" placeholder="Enter title" required>
 				</div>
         
 				<div class="form-group">
 					<label for="description">Offer Description:</label>
-					<textarea id="description" rows="4" placeholder="Enter Description"></textarea>
+					<textarea id="description" rows="4" placeholder="Enter Description" required></textarea>
 				</div>
         
 				<div class="form-group">
 					<label for="photo-upload">Add offer image:</label>
-					<input type="file" id="photo-upload">
+					<input type="file" id="photo-upload" required>
 				</div>
 
 				<div class="buttons">
