@@ -167,7 +167,9 @@ header div a img {
 
 
 @media (max-width: 480px) {
-  
+   .hidden {
+    display: none;
+}
     body {
         font-size: 12px;
     }
